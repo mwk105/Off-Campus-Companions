@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add styles for the background image */
+        body {
+            background-image: url('background.png'); /* Adjust the path as necessary */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the menu bar */
+        nav {
+            background-color: #a6d2ff;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: rgb(255, 255, 255)(252, 252, 252);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            line-height: 1.6;
+        }
+
+        .tips {
+            margin-bottom: 40px;
+        }
+
+        .tips h2 {
+            color: #000000ce;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .tips ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tips ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Forum</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="landing_page.html">Home</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="reviews.php">Reviews + Ratings</a></li>
+            <li><a href="faq.php">FAQ</a></li>
+            <li><a href="user_search.php">User Search</a></li>
+            <li><a href="forum.html">User Forum</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <form action="forum.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="budget">Budget:</label><br>
+                <input type="number" id="budget" name="budget" required><br>
+
+                <label for="post">Post:</label><br>
+                <textarea id="post" name="post" rows="4" required></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
